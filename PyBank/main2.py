@@ -18,15 +18,15 @@ with open(budget_csv, 'r') as csv_file:
 
 #Total Number of Months included in Data Set
 total_months = len(months_list)
-print(total_months)
+# print(total_months)
 
 #Net Total Amount of "Profits/Losses" over the entire period
-index = 0
+total = 0
 
 for num in profit_loss_list:
-    index = index + num
+    total = total + num
 
-print(index)
+# print(total)
 
 #Average of the changes in "Profit/Losses" over the entire period
 average_change = []
@@ -40,13 +40,13 @@ for x in range(len(profit_loss_list)):
         average_change.append(monthly_change)
         prior_month = profit_loss_list[x]
 
-print(average_change)
+# print(average_change)
 
 revenue_average = sum(average_change) / len(average_change)
 
-print(revenue_average)
+# print(revenue_average)
 y = round(revenue_average, 2)
-print(y)
+# print(y)
 
 
 #Greatest increase in profits (date and amount) over the entire period
@@ -65,15 +65,21 @@ for x in range(len(average_change)):
         greatest_decrease = average_change[x]
         greatest_decrease_month = months_list[x+1]
 
-print(str(greatest_increase_month) + str(greatest_increase))
-print(str(greatest_decrease_month) + str(greatest_decrease))
+# print(str(greatest_increase_month) + str(greatest_increase))
+# print(str(greatest_decrease_month) + str(greatest_decrease))
 
 #Financial Summary
 
 print('Financial Analysis')
 print('------------------')
-print('Total Months:' + str(total_months))
-print("Total:")
-print('Average Change:')
-print('Greatest Increase in Profits:')
-print('Greatest Decrease in Profits:')
+print('Total Months:' + " " + str(total_months))
+print("Total:" + " " + "$" + str(total) + "")
+print('Average Change:' + " " + "$" + str(y)+ "")
+print('Greatest Increase in Profits:' + " " + str(greatest_increase_month) + " " +
+ "($" + str(greatest_increase) + ")")
+print('Greatest Decrease in Profits:' + " " + str(greatest_decrease_month) + " " +
+ "($" + str(greatest_decrease) + ")")
+
+#Export Text File 
+with open('Analysis/budget.txt', 'w') as file:
+     f.write('Financial Analysis')
