@@ -70,16 +70,29 @@ for x in range(len(average_change)):
 
 #Financial Summary
 
-print('Financial Analysis')
-print('------------------')
-print('Total Months:' + " " + str(total_months))
-print("Total:" + " " + "$" + str(total) + "")
-print('Average Change:' + " " + "$" + str(y)+ "")
-print('Greatest Increase in Profits:' + " " + str(greatest_increase_month) + " " +
- "($" + str(greatest_increase) + ")")
-print('Greatest Decrease in Profits:' + " " + str(greatest_decrease_month) + " " +
- "($" + str(greatest_decrease) + ")")
+# print('Financial Analysis')
+# print('------------------')
+# print('Total Months:' + " " + str(total_months))
+# print("Total:" + " " + "$" + str(total) + "")
+# print('Average Change:' + " " + "$" + str(y)+ "")
+# print('Greatest Increase in Profits:' + " " + str(greatest_increase_month) + " " +
+#  "($" + str(greatest_increase) + ")")
+# print('Greatest Decrease in Profits:' + " " + str(greatest_decrease_month) + " " +
+#  "($" + str(greatest_decrease) + ")")
 
 #Export Text File 
-with open('analysis/budget.txt', 'w') as f:
-    f.write('Financial Analysis')
+pybank_analysis = os.path.join("analysis", "financial.txt")
+
+with open(pybank_analysis, 'w') as txt_file:
+    txt_file.write("Financial Analysis\n")
+    txt_file.write("------------------------------\n")
+    txt_file.write('Total Months:' + " " + str(total_months) + "\n")
+    txt_file.write("Total:" + " " + "$" + str(total) + "" + "\n")
+    txt_file.write('Average Change:' + " " + "$" + str(y)+ "" + "\n")
+    txt_file.write('Greatest Increase in Profits:' + " " + str(greatest_increase_month) + " " +
+    "($" + str(greatest_increase) + ")" + "\n")
+    txt_file.write('Greatest Decrease in Profits:' + " " + str(greatest_decrease_month) + " " +
+    "($" + str(greatest_decrease) + ")" + "\n")
+
+
+    
