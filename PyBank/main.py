@@ -68,7 +68,7 @@ for x in range(len(average_change)):
 # print(str(greatest_increase_month) + str(greatest_increase))
 # print(str(greatest_decrease_month) + str(greatest_decrease))
 
-Financial Summary
+# Financial Summary
 
 print('Financial Analysis')
 print('------------------')
@@ -80,7 +80,7 @@ print('Greatest Increase in Profits:' + " " + str(greatest_increase_month) + " "
 print('Greatest Decrease in Profits:' + " " + str(greatest_decrease_month) + " " +
  "($" + str(greatest_decrease) + ")")
 
-Export Text File 
+# Export Text File 
 pybank_analysis = os.path.join("analysis", "financial.txt")
 
 with open(pybank_analysis, 'w') as txt_file:
