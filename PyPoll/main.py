@@ -4,8 +4,7 @@ import csv
 #File Path
 election_csv = os.path.join("Resources", "election_data.csv")
 
-voterID_list = []
-county_list = []
+voter_counts = []
 candidate_list = []
 
 #Read the CSV file
@@ -14,16 +13,17 @@ with open(election_csv, 'r') as csv_file:
     next(reader)
 
     for row in reader:
-        voterID_list.append(str(row[0]))
-        county_list.append(str(row[1]))
-        candidate_list.append(str(row[2]))
+        voter_counts.append(str(row[0]))
+        
 
 #Total Number of Votes Cast
-total_votes = len(voterID_list)
+total_votes = len(voter_counts)
 print(total_votes)
 
 #Complete_list of candidates who received votes
-candidate = line[2]
+
+
+
 
 #Percentage of votes each candidate won
 #Total number of votes each candidate won
