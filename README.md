@@ -20,7 +20,7 @@ This challenge encompasses two Python analyses that involve analyzing the financ
 * [Output](https://github.com/SusanCThomas/PyPoll-PyBank-Python_Challenge/blob/master/PyBank/analysis/financial.txt) of the analysis is below:
     ![Image of Financial Analysis](https://github.com/SusanCThomas/PyPoll-PyBank-Python_Challenge/blob/master/PyBank/analysis/PyBank_Output_Analysis.png)
     
-    ## [PyPoll](https://github.com/SusanCThomas/PyPoll-PyBank-Python_Challenge/tree/master/PyPoll)
+## [PyPoll](https://github.com/SusanCThomas/PyPoll-PyBank-Python_Challenge/tree/master/PyPoll)
 -------------------------------------------------------------------------------------------------------------------
 * Create a Python script to help a small, rural town modernize it's vote counting process [election_data.csv](https://github.com/SusanCThomas/PyPoll-PyBank-Python_Challenge/blob/master/PyPoll/Resources/election_data.csv) of a company. The dataset is composed of three columns: `Voter ID`, `County` and  `Candidate`.
 
