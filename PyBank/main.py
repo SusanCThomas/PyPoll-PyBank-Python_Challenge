@@ -82,6 +82,4 @@ print('Greatest Decrease in Profits:' + " " + str(greatest_decrease_month) + " "
 
 #Export Text File 
 with open('analysis/budget.txt', 'w') as f:
-     f.write("Financial Analysis\n")
-     f.write("------------------\n")
-     f.write("Total Months")
+    f.write('Financial Analysis')
